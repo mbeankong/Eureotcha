@@ -1,8 +1,8 @@
 function goBack() {
   window.history.back();
 }
-const pathParts = window.location.pathname.split('/');
-const id = pathParts[pathParts.length - 1];
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
 const gongu_detail = document.getElementById('gongu_join_detail');
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -25,10 +25,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     const response = await fetch(`http://localhost:4000/api/group-buy/${id}`);
     const groupBuy = await response.json();
+    const imageUrl = `http://localhost:4000${groupBuy.image_url}`;
+    console.log(groupBuy);
     gongu_detail.innerHTML = `
     <div class="gongu_join_item">${groupBuy.product}</div>
         <div class="gongu_join_image">
-          <img src='${groupBuy.image_url}' alt="" />
+          <img src="${imageUrl}" alt="" />
         </div>
         <div class="gongu_join_info">
           <div>내가 가질 개수 : ${
