@@ -34,7 +34,39 @@
         <div>상품 URL : coupang.com/fiji1ji214mnk412</div>
       </section>
       <div class="gongu_join_button">
-        <button>구매 신청하기</button>
+        <button id="join_button">구매 신청하기</button>
+      </div>
+    </div>
+
+    <script src="../js/gongu_join.js"></script>
+    <div id="modal-container" class="modal">
+      <div class="modal-content">
+        <h2>
+          참여할 때 사용하실 정보를 <br />
+          입력해주세요
+        </h2>
+        <p class="modal-info">모집 인원이 충족되면 배송해 드립니다</p>
+
+        <label for="phone">전화번호</label>
+        <input type="tel" id="phone" placeholder="010-1234-5678" />
+
+        <label for="address">배송받을 주소</label>
+        <input type="text" id="address" placeholder="서울시 강남구 ~~" />
+
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" placeholder="********" />
+
+        <label for="password-confirm">비밀번호 확인</label>
+        <input type="password" id="password-confirm" placeholder="********" />
+
+        <p class="payment-info">
+          <span id="final-amount">0</span>원을 결제하시겠습니까?
+        </p>
+
+        <div class="modal-buttons">
+          <button id="cancel-btn">취소</button>
+          <button id="confirm-btn">결제하기</button>
+        </div>
       </div>
     </div>
     <script>
