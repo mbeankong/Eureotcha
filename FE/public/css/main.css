@@ -1,0 +1,36 @@
+.gongu_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.gongu_button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+.goods {
+  width: 200px;
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.people {
+  display: flex;
+}
+.people_image {
+  width: 30px;
+}
