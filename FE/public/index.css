@@ -1,0 +1,16 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 480px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: #ffd045;
+}
+.logo_image {
+  width: 110px;
+  margin-left: 20px;
+}
