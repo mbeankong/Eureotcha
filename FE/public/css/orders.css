@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'GmarketSansMedium', sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+.mobile-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* 타이틀 스타일 */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px 0;
+  background: #ddd;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 입력 필드 */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background: #eee;
+  text-align: center;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+/* 리스트 스타일 */
+.list {
+  padding: 20px;
+}
+
+.list-item {
+  background: #d3d3d3;
+  margin: 10px 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.count-user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.price {
+  font-size: 16px;
+}
+
+/* 버튼 스타일 */
+.cancel-btn, .completed-btn {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.cancel-btn {
+  background: red;
+  color: white;
+}
+
+.completed-btn {
+  background: lightgray;
+  color: black;
+}
