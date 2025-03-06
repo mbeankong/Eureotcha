@@ -2,27 +2,6 @@ function goBack() {
     window.history.back();
 }
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const fileInput = document.getElementById("file-upload");
-//     const previewImage = document.querySelector(".upload-icon"); // 기존 업로드 아이콘 이미지
-//     const modal = document.getElementById("modal-container");
-//     const registerBtn = document.querySelector(".register-btn");
-//     const cancelBtn = document.getElementById("cancel-btn");
-//     const finalAmount = document.getElementById("final-amount");
-//     const individualAmount = document.getElementById("individual-amount");
-
-//     fileInput.addEventListener("change", function (event) {
-//         const file = event.target.files[0];
-//         if (file) {
-//             const reader = new FileReader();
-//             reader.onload = function (e) {
-//                 previewImage.src = e.target.result; // 업로드된 이미지로 변경
-//             };
-//             reader.readAsDataURL(file);
-//         }
-//     });
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
     const fileInput = document.getElementById("file-upload");
     const previewImage = document.querySelector(".upload-icon"); // 기존 업로드 아이콘 이미지
