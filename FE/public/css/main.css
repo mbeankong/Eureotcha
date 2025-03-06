@@ -7,8 +7,15 @@
 }
 .gongu_button {
   width: 100%;
+
   display: flex;
   justify-content: space-between;
+}
+.gongu_button button {
+  padding: 10px;
+  background: #d9d9d9;
+  border: none;
+  cursor: pointer;
 }
 
 .card {
@@ -16,10 +23,10 @@
   background-color: antiquewhite;
   padding: 10px;
 }
-.goods {
-  width: 200px;
-}
 
+.goods {
+  width: 100px;
+}
 .post {
   width: 100%;
   display: flex;
