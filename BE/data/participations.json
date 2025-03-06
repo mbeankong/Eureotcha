@@ -2,33 +2,25 @@
   {
     "participate_id": 1,
     "id": 1,
-    "phone": "01012345678",
+    "phone": "010-1234-5678",
     "address": "노블레스 관광호텔",
-    "password": 1234,
+    "password": "1234",
     "cancle": false
   },
   {
     "participate_id": 2,
-    "id": 1,
-    "phone": "1234",
-    "address": "주소",
-    "password": "1561",
-    "cancle": false
-  },
-  {
-    "participate_id": 3,
     "id": 2,
-    "phone": "1234",
-    "address": "주소",
-    "password": "1561",
+    "phone": "010-9999-9999",
+    "address": "제주시 이도이동",
+    "password": "1111",
     "cancle": false
   },
   {
     "participate_id": 3,
     "id": 3,
-    "phone": "1234",
-    "address": "주소",
-    "password": "1561",
+    "phone": "010-1111-1111",
+    "address": "서울시 강동구",
+    "password": "0000",
     "cancle": false
   }
 ]
