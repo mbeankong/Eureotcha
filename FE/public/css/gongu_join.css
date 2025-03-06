@@ -3,20 +3,36 @@
   margin: 20px;
 }
 .gongu_join_detail {
-  margin: 20px;
-  border-radius: 10px;
-  background-color: #fafcb9;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fffbea;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
 }
-.gongu_join_detail div:first-child {
-  font-size: larger;
+.gongu_join_item {
+  font-size: 20px;
+  color: #333;
   font-weight: bold;
 }
-.gongu_join_detail img {
+.gongu_join_info div {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+.gongu_join_image {
+  display: flex;
+  justify-content: center;
+}
+.gongu_join_image img {
+  border-radius: 10px;
   width: 200px;
 }
 .gongu_join_button {
@@ -28,6 +44,7 @@
   padding: 20px;
   border: none;
   border-radius: 10px;
+  font-family: 'GmarketSansMedium', sans-serif;
 }
 
 /* 모달창 */
