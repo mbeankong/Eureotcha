@@ -9,9 +9,8 @@ app.get('/api/message', (req, res) => {
   res.json({ message: 'FE 서버 시작 !' });
 });
 
-// HTML 서빙
-app.get('/orders', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src/html', 'orders.html'));
+app.get('/main', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/html', 'main.html'));
 });
 
 const PORT = process.env.PORT || 5500;
