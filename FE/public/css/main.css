@@ -24,10 +24,13 @@
   background-color: antiquewhite;
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .goods {
-  width: 100px;
+  width: 120px;
+  height: 90px;
+  border-radius: 10px;
 }
 .post {
   width: 100%;
@@ -37,6 +40,11 @@
   align-items: end;
   gap: 10px;
 }
+.post .post_title {
+  font-weight: bold;
+  font-size: large;
+}
+
 .people {
   display: flex;
 }
