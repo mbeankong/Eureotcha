@@ -183,12 +183,16 @@ align-items: center;
 }
 
 .modal-content {
+display:flex;
 background: white;
 padding: 20px;
 border-radius: 10px;
 text-align: center;
 width: 80%;
+height: 145px;
 max-width: 300px;
+flex-direction: column;
+justify-content: center;
 }
 
 .modal-btn {
