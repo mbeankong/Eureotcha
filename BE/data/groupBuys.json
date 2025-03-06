@@ -1,12 +1,23 @@
 [
-    {
-      "id": 1,
-      "product": "치킨 공동구매",
-      "image_url": "https://example.com/chicken.jpg",
-      "current_count": 1,
-      "target_count": 5,
-      "price": 15000,
-      "product_url": "https://coupang.com",
-      "status": "closed"
-    }
+  {
+    "id": 1,
+    "product": "피자 공동구매",
+    "image_url": "https://example.com/pizza.jpg",
+    "current_count": 1,
+    "target_count": 4,
+    "price": 20000,
+    "product_url": "https://coupang.com",
+    "status": "open"
+  },
+  {
+    "id": 2,
+    "product": "피자 공동구매",
+    "total_amount": 10,
+    "image_url": "https://example.com/pizza.jpg",
+    "current_count": 1,
+    "target_count": 4,
+    "price": 20000,
+    "product_url": "https://coupang.com",
+    "status": "open"
+  }
 ]
