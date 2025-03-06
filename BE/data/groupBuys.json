@@ -31,38 +31,5 @@
     "price": 100000,
     "product_url": "https://coupang.com",
     "status": "closed"
-  },
-  {
-    "id": 4,
-    "product": "앰플",
-    "total_amount": 10,
-    "image_url": "uploads/default.png",
-    "current_count": 1,
-    "target_count": 2,
-    "price": 50000,
-    "product_url": "coupang.com/ampule1234",
-    "status": "open"
-  },
-  {
-    "id": 5,
-    "product": "앰플",
-    "total_amount": 10,
-    "image_url": "uploads/default.png",
-    "current_count": 1,
-    "target_count": 2,
-    "price": 50000,
-    "product_url": "coupang.com/ampule1234",
-    "status": "open"
-  },
-  {
-    "id": 6,
-    "product": "앰플",
-    "total_amount": 10,
-    "image_url": "uploads/default.png",
-    "current_count": 1,
-    "target_count": 2,
-    "price": 50000,
-    "product_url": "coupang.com/ampule1234",
-    "status": "open"
   }
 ]
