@@ -62,26 +62,27 @@ display: flex;
 align-items: center;
 }
 
-/* �쒕툕���댄� �ㅽ��� */
 .subtitle {
-font-size: 14px;
-color: #333;
-margin: 20px 0;
+font-size: 24px;
+margin: 10px 0;
+margin-bottom:15px;
 }
 
 /* �낅젰 �꾨뱶 */
 .input-container {
 display: flex;
 flex-direction: column;
-gap: 10px;
+gap: 15px;
 padding: 0 20px;
 }
 
 .input-container input {
 width: 100%;
+height: 44px;
 padding: 10px;
 font-size: 16px;
-border: 1px solid #ccc;
+border:none;
+border-radius: 10px;
 background: #eee;
 text-align: center;
 }
@@ -92,10 +93,12 @@ padding: 10px;
 font-size: 16px;
 background: #ffd045;
 border: none;
+border-radius: 10px;
 cursor: pointer;
 font-weight: bold;
 display: block;
 margin: 0 auto;
+margin-top: 14px;
 }
 
 /* 由ъ뒪�� �ㅽ��� */
@@ -180,16 +183,20 @@ align-items: center;
 }
 
 .modal-content {
+display:flex;
 background: white;
 padding: 20px;
 border-radius: 10px;
 text-align: center;
 width: 80%;
+height: 145px;
 max-width: 300px;
+flex-direction: column;
+justify-content: center;
 }
 
 .modal-btn {
-margin-top: 10px;
+margin-top: 20px;
 padding: 10px 15px;
 border: none;
 border-radius: 5px;
@@ -199,8 +206,10 @@ font-weight: bold;
 
 .confirm {
 background-color: #ffd045;
+margin-right:13px;
 }
 
 .close {
 background-color: #ccc;
+margin-left:13px;
 }

@@ -2,7 +2,8 @@ const express = require("express");
 const {
     getAllGroupBuys,
     getGroupBuyById,
-    getGroupBuyStatus
+    getGroupBuyStatus,
+    createGroupBuy
 } = require("../controllers/groupBuyController");
 
 const router = express.Router();
@@ -15,5 +16,8 @@ router.get("/status", getGroupBuyStatus);
 
 // 특정 공동구매 상세 조회 (공구 참여)
 router.get("/:id", getGroupBuyById);
+
+// 공동구매 등록 (공구 생성)
+router.post("/", createGroupBuy);
 
 module.exports = router;
