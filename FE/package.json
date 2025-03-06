@@ -11,15 +11,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-<<<<<<< HEAD
     "express": "^4.21.2"
-=======
-    "express": "^4.21.2",
-    "path": "^0.12.7",
-    "cors": "^2.8.5"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
->>>>>>> develop
   }
 }
