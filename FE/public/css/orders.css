@@ -150,7 +150,7 @@ font-weight: bold;
 /* 踰꾪듉 �ㅽ��� */
 .cancel-btn, .completed-btn {
 padding: 5px 10px;
-border-radius: 15px;
+border-radius: 9px;
 font-size: 14px;
 font-weight: bold;
 border: none;
@@ -212,4 +212,123 @@ margin-right:13px;
 .close {
 background-color: #ccc;
 margin-left:13px;
+}
+
+/* 📌 주문 내역 카드 스타일 */
+#orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+}
+
+/* 개별 카드 스타일 */
+.order-card {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* 상품 이미지 스타일 */
+.order-card img.order-img {
+    width: 60px;  /* 이미지 크기 작게 */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+/* 텍스트 정보 컨테이너 */
+.order-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+/* 제목 스타일 */
+.order-details h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* 가격 및 인원 정보 */
+.order-details p {
+    font-size: 14px;
+    color: #333;
+    margin: 2px 0;
+}
+
+/* 취소 버튼 스타일 */
+.cancel-btn, .completed-btn {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.cancel-btn {
+    background: #ffd045;
+}
+
+.completed-btn {
+    background: lightgray;
+    color: black;
+}
+
+/* 📌 모달 창 스타일 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    height: 145px;
+    max-width: 300px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.confirm {
+    background-color: #ffd045;
+    margin-right: 13px;
+}
+
+.close {
+    background-color: #ccc;
+    margin-left: 13px;
 }
