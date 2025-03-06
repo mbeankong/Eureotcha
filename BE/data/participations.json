@@ -14,5 +14,21 @@
     "address": "주소",
     "password": "1561",
     "cancle": false
+  },
+  {
+    "participate_id": 3,
+    "id": 2,
+    "phone": "1234",
+    "address": "주소",
+    "password": "1561",
+    "cancle": false
+  },
+  {
+    "participate_id": 3,
+    "id": 3,
+    "phone": "1234",
+    "address": "주소",
+    "password": "1561",
+    "cancle": false
   }
 ]
