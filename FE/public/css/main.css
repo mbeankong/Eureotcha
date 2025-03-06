@@ -1,3 +1,57 @@
+.gongu_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.gongu_button {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.gongu_button button {
+  padding: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.goods {
+  width: 120px;
+  height: 90px;
+  border-radius: 10px;
+}
+.post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.post .post_title {
+  font-weight: bold;
+  font-size: large;
+}
+
+.people {
+  display: flex;
+}
+.people_image {
+  width: 30px;
+}
+
 @font-face {
   font-family: 'GmarketSansMedium';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')

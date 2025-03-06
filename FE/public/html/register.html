@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>띱띱-등록하기</title>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios"
+    />
+    <link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+    <header class="header">
+            <span class="material-symbols-outlined back-button" onclick="goBack()">
+            arrow_back_ios
+            </span>
+        <div class="logoimage">
+            <img src="../logo.png" alt="Logo" class="logo_image" />
+            <p>띱띱</p>
+        </div>
+
+    </header>
+
+    <div class="title">등록페이지</div>
+
+    <div class="register-container">
+        <label for="file-upload" class="image-upload">
+            <img src="../image_upload_icon.png" alt="Upload Image" class="upload-icon" />
+        </label>
+        <input type="file" id="file-upload" accept="image/*" style="display: none;" />
+
+        <input type="text" placeholder="품명을 입력하세요" id="item-name">
+        <input type="number" placeholder="총 갯수를 입력하세요" id="total-quantity">
+        <input type="number" placeholder="모집할 인원을 입력하세요" id="num-people">
+        <textarea placeholder="링크를 입력하세요 " id="product-link"></textarea>
+        <input type="number" placeholder="총액을 입력하세요" id="total-price">
+
+        <div class="summary">
+            <span>인원수 <span id="people-count">0</span>명</span> <br>
+            <span>총액 <span id="total-amount">0</span>원</span> <br>
+            <span>내가 결제할 금액 <span id="individual-amount">0</span>원</span>
+        </div>
+
+        <button class="register-btn" onclick="calculatePrice()">등록하기</button>
+    </div>
+
+    <div id="modal-container" class="modal">
+        <div class="modal-content">
+            <h2>참여할 때 사용하실 정보를 <br> 입력해주세요</h2>
+            <p class="modal-info">모집 인원이 충족되면 배송해 드립니다</p>
+    
+            <label for="phone">전화번호</label>
+            <input type="tel" id="phone" placeholder="010-1234-5678">
+    
+            <label for="address">배송받을 주소</label>
+            <input type="text" id="address" placeholder="서울시 강남구 ~~">
+    
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" placeholder="********">
+    
+            <label for="password-confirm">비밀번호 확인</label>
+            <input type="password" id="password-confirm" placeholder="********">
+    
+            <p class="payment-info"><span id="final-amount">0</span>원을 결제하시겠습니까?</p>
+    
+            <div class="modal-buttons">
+                <button id="cancel-btn">취소</button>
+                <button id="confirm-btn">결제하기</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/register.js"></script>
+</body>
+</html>

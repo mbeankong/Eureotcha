@@ -1,0 +1,31 @@
+.gongu_join_title {
+  text-align: center;
+  margin: 20px;
+}
+.gongu_join_detail {
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.gongu_join_detail div:first-child {
+  font-size: larger;
+  font-weight: bold;
+}
+.gongu_join_detail img {
+  width: 200px;
+  margin: 20px 0;
+}
+.gongu_join_button {
+  display: flex;
+  justify-content: center;
+}
+.gongu_join_button button {
+  background: #d9d9d9;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}

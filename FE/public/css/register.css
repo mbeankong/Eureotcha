@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/* 📌 모바일 화면을 감싸는 컨테이너 */
+.mobile-container {
+width: 100%;
+max-width: 480px;
+margin: 0 auto;
+background-color: white;
+border: 1px solid #ddd;
+}
+
+body {
+font-family: 'GmarketSansMedium', sans-serif;
+margin: 0 auto;
+width: 100%;
+max-width: 480px;
+}
+
+/* 📌 헤더 스타일 */
+.header {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 70px;
+background-color: #ffd045;
+padding: 0 15px;
+position: relative;
+}
+
+/* 📌 뒤로가기 버튼 스타일 */
+.back-button {
+background: none;
+border: none;
+font-size: 24px;
+cursor: pointer;
+position: absolute;
+left: 30px; /* 좌측 여백과 맞춤 */
+}
+
+/* 📌 로고 이미지 스타일 */
+.logo_image {
+width: 50px;
+margin: 0 auto;
+}
+
+.logoimage {
+display: flex;
+align-items: center;
+}
+
+.title { 
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+}
+
+/* 📌 등록 폼 스타일 */
+.register-container {
+    background: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-icon {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+label.image-upload {
+    display:flex;
+    justify-content: center;
+    Width:100px;    
+}
+
+/* 📌 입력 필드 */
+input, textarea {
+    width: 100%;
+    max-width: 360px;
+    padding: 13px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.summary {
+    margin-top:15px;
+    margin-bottom:10px;
+}
+/* 📌 등록 버튼 */
+.register-btn {
+    width: 100%;
+    max-width: 360px;
+    padding: 10px;
+    background-color: #ffd045;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* 📌 모달창 기본 스타일 */
+.modal {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+/* 📌 모달 내용 */
+.modal-content {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* 📌 안내 문구 */
+.modal-info {
+    color: red;
+    font-size: 14px;
+}
+
+/* 📌 입력 필드 스타일 */
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 📌 결제 정보 */
+.payment-info {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* 📌 버튼 스타일 */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.modal-buttons button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cancel-btn {
+    background-color: #ccc;
+}
+
+#confirm-btn {
+    background-color: #ffd045;
+}
+
+.modal-info {
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
