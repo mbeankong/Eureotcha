@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'GmarketSansMedium', sans-serif;
+margin: 0 auto;
+width: 100%;
+max-width: 480px;
+text-align: center;
+}
+
+.mobile-container {
+width: 100%;
+max-width: 480px;
+margin: 0 auto;
+background-color: white;
+}
+
+/* �ㅻ뜑 �ㅽ��� */
+.header {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 70px;
+background-color: #ffd045;
+padding: 0 15px;
+position: relative;
+}
+
+.back-button {
+background: none;
+border: none;
+font-size: 24px;
+cursor: pointer;
+position: absolute;
+left: 30px;
+}
+
+.logoimage {
+display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 24px;
+}
+
+.logo_image {
+width: 110px;
+margin: 0 auto;
+}
+
+/* �쒕툕���댄� �ㅽ��� */
+.subtitle {
+font-size: 14px;
+color: #333;
+margin: 20px 0;
+}
+
+/* �낅젰 �꾨뱶 */
+.input-container {
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding: 0 20px;
+}
+
+.input-container input {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+background: #eee;
+text-align: center;
+}
+
+.search-btn {
+width: 40%;
+padding: 10px;
+font-size: 16px;
+background: #ffd045;
+border: none;
+cursor: pointer;
+font-weight: bold;
+display: block;
+margin: 0 auto;
+}
+
+/* 由ъ뒪�� �ㅽ��� */
+.list {
+padding: 20px;
+}
+
+.list-item {
+background: #f8f8f8;
+margin: 10px 0;
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+
+.info {
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.title {
+font-size: 18px;
+font-weight: bold;
+padding-bottom: 4px;
+}
+
+.count-user {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.user-icon {
+width: 20px;
+height: 20px;
+color: #000000;
+background-color: #ffffff;
+}
+
+.price {
+font-size: 16px;
+font-weight: bold;
+}
+
+/* 踰꾪듉 �ㅽ��� */
+.cancel-btn, .completed-btn {
+padding: 5px 10px;
+border-radius: 15px;
+font-size: 14px;
+font-weight: bold;
+border: none;
+cursor: pointer;
+position: relative;
+}
+
+.cancel-btn {
+background: #ffd045;
+}
+
+.completed-btn {
+background: lightgray;
+color: black;
+}
+
+/* 紐⑤떖 �ㅽ��� */
+.modal {
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgba(0, 0, 0, 0.5);
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+background: white;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+width: 80%;
+max-width: 300px;
+}
+
+.modal-btn {
+margin-top: 10px;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.confirm {
+background-color: #ffd045;
+}
+
+.close {
+background-color: #ccc;
+}
