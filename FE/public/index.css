@@ -28,32 +28,14 @@ body {
   max-width: 480px;
 }
 
-/* 📌 헤더 스타일 */
 .logo {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: 70px;
   background-color: #ffd045;
-  padding: 0 15px;
-  position: relative;
 }
-
-/* 📌 뒤로가기 버튼 스타일 */
-.back-button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* 📌 로고 이미지 스타일 */
 .logo_image {
   width: 110px;
-  margin: 0 auto;
+  margin-left: 20px;
 }
