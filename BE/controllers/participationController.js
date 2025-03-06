@@ -77,7 +77,7 @@ const load_json_data = (filePath) => {
         const raw_data = fs.readFileSync(filePath, "utf8");
         return raw_data ? JSON.parse(raw_data) : [];
     } catch (error) {
-        console.error(`❌ JSON 데이터 로드 중 오류 발생: ${filePath}`, error);
+        // console.error(`❌ JSON 데이터 로드 중 오류 발생: ${filePath}`, error);
         return [];
     }
 };
@@ -89,8 +89,8 @@ const get_join_data = (req, res) => {
     const participationData = load_json_data(participation_data_path);
     const productData = load_json_data(group_data_path);
 
-    console.log(participationData);
-    console.log(productData);
+    // console.log(participationData);
+    // console.log(productData);
 
     // 특정 참여자를 찾고 그에 맞는 제품 정보를 가져오는 함수
     function matchParticipationWithProducts(phone, password) {
@@ -100,13 +100,13 @@ const get_join_data = (req, res) => {
         );
 
         if (authorizedParticipants.length === 0) {
-            console.log("일치하는 참여자를 찾을 수 없습니다.");
+            // console.log("일치하는 참여자를 찾을 수 없습니다.");
             return null;
         }
 
         // 참여자의 id 목록 가져오기
         const ids = [...new Set(authorizedParticipants.map(participant => participant.id))]; // 중복 제거
-        console.log("참여자의 ID 목록: ", ids);
+        // console.log("참여자의 ID 목록: ", ids);
 
         // 각 ID에 대한 유효한 참여자 필터링 (cancel이 false인 경우)
         const validParticipantsMap = {};
@@ -114,13 +114,13 @@ const get_join_data = (req, res) => {
             validParticipantsMap[id] = participationData.filter(participant => participant.id === id && !participant.cancel).length;
         });
 
-        console.log("validParticipantsMap: ", validParticipantsMap);
+        // console.log("validParticipantsMap: ", validParticipantsMap);
 
         // 해당 id를 가진 모든 제품 찾기
         let matchedProducts = productData.filter(product => ids.includes(product.id));
 
         if (matchedProducts.length === 0) {
-            console.log("해당 ID의 제품을 찾을 수 없습니다.");
+            // console.log("해당 ID의 제품을 찾을 수 없습니다.");
             return null;
         }
 
@@ -134,7 +134,7 @@ const get_join_data = (req, res) => {
 
     // phone과 password를 기반으로 제품과 참여자 정보 매칭
     const updatedProducts = matchParticipationWithProducts(phone, password);
-    console.log('updatedProducts: ', updatedProducts);
+    // console.log('updatedProducts: ', updatedProducts);
 
     // 응답 반환
     if (updatedProducts && updatedProducts.length > 0) {
