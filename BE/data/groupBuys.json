@@ -1,36 +1,35 @@
 [
-    {
-      "id": 1,
-      "product": "치킨 공동구매",
-      "total_amount": 10,
-      "image_url": "/uploads/chicken.png",
-      "current_count": 1,
-      "target_count": 5,
-      "price": 15000,
-      "product_url": "https://coupang.com",
-      "status": "closed"
-    },
-    {
-      "id": 2,
-      "product": "녹차",
-      "total_amount": 100,
-      "image_url": "/uploads/stock.jpg",
-      "current_count": 3,
-      "target_count": 4,
-      "price": 1200,
-      "product_url": "https://coupang.com",
-      "status": "closed"
-    },
-    {
-      "id": 3,
-      "product": "카나",
-      "total_amount": 1,
-      "image_url": "/uploads/kana.jpg",
-      "current_count": 1,
-      "target_count": 100,
-      "price": 999999,
-      "product_url": "https://coupang.com",
-      "status": "closed"
-    }
+  {
+    "id": 1,
+    "product": "치킨 공동구매",
+    "total_amount": 10,
+    "image_url": "/uploads/chicken.png",
+    "current_count": 1,
+    "target_count": 5,
+    "price": 15000,
+    "product_url": "https://coupang.com",
+    "status": "closed"
+  },
+  {
+    "id": 2,
+    "product": "녹차",
+    "total_amount": 100,
+    "image_url": "/uploads/stock.jpg",
+    "current_count": 3,
+    "target_count": 4,
+    "price": 1200,
+    "product_url": "https://coupang.com",
+    "status": "closed"
+  },
+  {
+    "id": 3,
+    "product": "카나",
+    "total_amount": 1,
+    "image_url": "/uploads/kana.jpg",
+    "current_count": 1,
+    "target_count": 100,
+    "price": 999999,
+    "product_url": "https://coupang.com",
+    "status": "closed"
+  }
 ]
-
