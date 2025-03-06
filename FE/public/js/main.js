@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             // 클릭 시 해당 공동구매 상세 페이지 이동
             card.addEventListener("click", () => {
-                window.location.href = `gongu_join.html?id=${groupBuy.id}`;
+                window.location.href = `html/gongu_join.html?id=${groupBuy.id}`;
             });
 
             // 부모 컨테이너에 추가

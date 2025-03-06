@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("modal-container");
     const registerBtn = document.querySelector(".register-btn");
     const cancelBtn = document.getElementById("cancel-btn");
+    const confirmBtn = document.getElementById("confirm-btn");
 
     // 파일 업로드 시 미리보기 이미지 변경
     fileInput.addEventListener("change", function (event) {
@@ -65,6 +66,50 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "flex";
     });
 
+    // ✅ 결제하기 버튼 클릭 시 공동구매 참여 정보 등록
+    confirmBtn.addEventListener("click", async function () {
+        const id = 1;  // 📌 공동구매 ID (현재는 임시값, 백엔드에서 받아야 함)
+        const phone = document.getElementById("phone").value;
+        const address = document.getElementById("address").value;
+        const password = document.getElementById("password").value;
+
+        if (!phone || !address || !password) {
+            alert("모든 정보를 입력해주세요.");
+            return;
+        }
+
+        const participationData = {
+            id,
+            phone,
+            address,
+            password
+        };
+
+        try {
+            const response = await fetch("http://localhost:4000/api/participation", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(participationData),
+            });
+
+            if (response.ok) {
+                alert("공동구매 신청이 완료되었습니다.");
+                modal.style.display = "none"; // 모달 닫기
+            } else {
+                alert("공동구매 신청에 실패했습니다.");
+            }
+        } catch (error) {
+            console.error("공동구매 신청 중 오류 발생:", error);
+        }
+    });
+
+    // 취소 버튼 클릭 시 모달창 닫기
+    cancelBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+    
     // 취소 버튼 클릭 시 모달창 닫기
     cancelBtn.addEventListener("click", function () {
         modal.style.display = "none";
