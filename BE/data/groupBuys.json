@@ -31,5 +31,16 @@
     "price": 100000,
     "product_url": "https://coupang.com",
     "status": "closed"
+  },
+  {
+    "id": 4,
+    "product": "하리보 젤리",
+    "total_amount": 100,
+    "image_url": "/uploads/haribo.jpeg",
+    "current_count": 1,
+    "target_count": 4,
+    "price": 2500,
+    "product_url": "coupang.link/1234",
+    "status": "open"
   }
 ]

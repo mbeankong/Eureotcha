@@ -22,5 +22,21 @@
     "address": "서울시 강동구",
     "password": "0000",
     "cancle": false
+  },
+  {
+    "participate_id": 4,
+    "id": 1,
+    "phone": "010-7777-7772",
+    "address": "제주시 이도도동",
+    "password": "2222",
+    "cancle": false
+  },
+  {
+    "participate_id": 5,
+    "id": 4,
+    "phone": "010-7777-7777",
+    "address": "제주시 이도도동",
+    "password": "7777",
+    "cancle": false
   }
 ]
