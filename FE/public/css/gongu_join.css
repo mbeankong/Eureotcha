@@ -1,0 +1,118 @@
+.gongu_join_title {
+  text-align: center;
+  margin: 20px;
+}
+.gongu_join_detail {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color:  #f8f8f8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.gongu_join_item {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+.gongu_join_info div {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+.gongu_join_image {
+  display: flex;
+  justify-content: center;
+}
+.gongu_join_image img {
+  border-radius: 10px;
+  width: 200px;
+}
+.gongu_join_button {
+  display: flex;
+  justify-content: center;
+}
+.gongu_join_button button {
+  background: #ffd045;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+/* 모달창 */
+.modal {
+  display: none; /* 기본적으로 숨김 */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* 📌 모달 내용 */
+.modal-content {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+.modal-info {
+  color: red;
+  font-size: 14px;
+}
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 📌 결제 정보 */
+.payment-info {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+/* 📌 버튼 스타일 */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.modal-buttons button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cancel-btn {
+  background-color: #ccc;
+}
+
+#confirm-btn {
+  background-color: #ffd045;
+}
+
+.modal-info {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}

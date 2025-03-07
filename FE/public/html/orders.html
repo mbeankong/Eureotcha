@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>띱띱-등록하기</title>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios"
+    />
+    <link rel="stylesheet" href="../css/orders.css" />
+</head>
+<body>
+    <header class="header">
+            <span class="material-symbols-outlined back-button" onclick="goBack()">
+            arrow_back_ios
+            </span>
+        <div class="logoimage">
+            <img src="../logo.png" alt="Logo" class="logo_image" />
+            <p>띱띱</p>
+        </div>
+
+    </header>
+
+        <p class="subtitle">신청 조회 페이지</p>
+
+        <!-- 입력 필드 -->
+        <div class="input-container">
+            <input type="text" id="phone" placeholder="휴대폰 번호를 입력하세요">
+            <input type="password" id="password" placeholder="비밀번호를 입력하세요">
+            <button class="search-btn" id = "search-btn">조회</button>
+        </div>
+
+        <!-- 목록 -->
+        <!-- <div class="list">
+            <div class="list-item">
+                <div class="info">
+                    <span class="title">면봉</span>
+                    <div class="count-user">
+                        <span class="count">2/5 명</span>
+                    </div>
+                </div>
+                <div class="price">1500원</div>
+                <button class="cancel-btn" onclick="openModal()">취소하기</button>
+            </div>
+
+            <div class="list-item">
+                <div class="info">
+                    <span class="title">치실</span>
+                    <div class="count-user">
+                        <span class="count">5/5 명</span>
+                    </div>
+                </div>
+                <div class="price">2500원</div>
+                <button class="completed-btn">모집완료</button>
+            </div>
+        </div>
+    </div> -->
+    <section id="orders-container">
+        <!-- 참여 내역이 동적으로 추가될 곳 -->
+    </section>
+    <!-- 모달 창 -->
+    <div id="cancelModal" class="modal">
+        <div class="modal-content">
+            <p>취소하시겠습니까?</p>
+            <div class ="modal-buttondiv">
+                <button class="modal-btn confirm" onclick="confirmCancel()">확인</button>
+                <button class="modal-btn close" onclick="closeModal()">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/orders.js"></script>
+
+</body>
+</html>
