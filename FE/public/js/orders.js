@@ -18,6 +18,10 @@ function closeModal() {
 
 function confirmCancel() {
     alert("취소가 완료되었습니다.");
+    const orderCard = document.querySelector(".order-card"); // 가장 첫 번째 주문 카드
+    if (orderCard) {
+        orderCard.style.display = "none"; // 화면에서 숨김
+    }
     closeModal();
 }
 

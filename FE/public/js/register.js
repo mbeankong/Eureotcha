@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ✅ 결제하기 버튼 클릭 시 공동구매 참여 정보 등록
     confirmBtn.addEventListener("click", async function () {
-        const id = 1;  // 📌 공동구매 ID (현재는 임시값, 백엔드에서 받아야 함)
+        const id = 4;  // 📌 공동구매 ID (현재는 임시값, 백엔드에서 받아야 함)
         const phone = document.getElementById("phone").value;
         const address = document.getElementById("address").value;
         const password = document.getElementById("password").value;
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ✅ 결제하기 버튼 클릭 시 공동구매 참여 정보 등록
     confirmBtn.addEventListener("click", async function () {
-        const id = 1;  // 📌 공동구매 ID (현재는 임시값, 백엔드에서 받아야 함)
+        const id = 4;  // 📌 공동구매 ID (현재는 임시값, 백엔드에서 받아야 함)
         const phone = document.getElementById("phone").value;
         const address = document.getElementById("address").value;
         const password = document.getElementById("password").value;
